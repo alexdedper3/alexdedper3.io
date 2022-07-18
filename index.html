@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+   <div class="grid-container">
+        <div class="grid-element">1</div>
+        <div class="grid-element">2</div>
+        <div class="grid-element">3</div>
+        <div class="grid-element">4</div>
+        <div class="grid-element">5</div>
+        <div class="grid-element">6</div>
+        <div class="grid-element">7</div>
+        <div class="grid-element">8</div>
+        <div class="grid-element">9</div>
+        <div class="grid-element">10</div>
+   </div>
+   <div class="grid-container2">
+        <div class="grid-element2">1</div>
+        <div class="grid-element2">2</div>
+        <div class="grid-element2">3</div>
+        <div class="grid-element2">4</div>
+        <div class="grid-element2">5</div>
+        <div class="grid-element2">6</div>
+        <div class="grid-element2">7</div>
+        <div class="grid-element2">8</div>
+        <div class="grid-element2">9</div>
+        <div class="grid-element2">10</div>
+   </div>
+   <div class="grid-container3">
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+        <div class="grid-item">
+            <img src="img/slide_1.jpg" alt="" class="grid-item__img">
+            <div class="grid-item__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum ipsa voluptate dolore tempora laborum harum assumenda provident reiciendis, minima eaque placeat quam nostrum maiores nihil perferendis debitis maxime dolor.</div>
+        </div>
+    </div>
+    <section class="form">
+        <div class="container">
+            <h2 class="title title_left">Получите бесплатную консультациюпо <br> по дбору пульсометра 
+            </h2>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input required name="name"  maxlength="13" placeholder="Ваше имя" type="text">
+                <input required name="phone" placeholder="Ваш телефон">
+                <input required name="email" placeholder="Ваш E-mail" type="email">   
+
+                <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                <!-- <textarea style="resize: none" name="" placeholder="Описание проблемы"></textarea> -->
+                <!-- <input type="submit" value="ЗАКАЗАТЬ КОНЧУЛЬТАЦИЮ"> -->
+                <button class="button button__submit">ЗАКАЗАТЬ КОНЧУЛЬТАЦИЮ</button>
+                <!-- <input type="reset"> -->
+            </form>
+        </div>
+    </section>
+
+    <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+        <p>Имя</p>
+        <input placeholder="Представьтесь" name="name" type="text" >
+        <p>Email</p>
+        <input placeholder="Укажите почту" name="email" type="text" >
+        <p>Сообщение</p>
+        <textarea name="text"></textarea>
+        <p>Прикрепить файлы</p>
+        <input type="file" name="myfile[]" multiple id="myfile">
+        <p><input value="Отправить" type="submit"></p>
+   </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
